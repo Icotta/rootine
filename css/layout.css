@@ -1,1 +1,82 @@
+/* ===========================
+   PAGE LAYOUT
+=========================== */
 
+body {
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    padding:
+        env(safe-area-inset-top, 20px)
+        20px
+        calc(96px + env(safe-area-inset-bottom))
+        20px;
+
+    overflow-x: hidden;
+}
+
+/* ===========================
+   APP
+=========================== */
+
+.app {
+    position: relative;
+    min-height: 100%;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section {
+    width: 100%;
+}
+
+.section + .section {
+    margin-top: 18px;
+}
+
+/* ===========================
+   CONTAINERS
+=========================== */
+
+.container {
+    width: 100%;
+}
+
+.container-sm {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   SAFE AREA
+=========================== */
+
+.safe-bottom {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 16px);
+}
+
+/* ===========================
+   FIXED ELEMENTS
+=========================== */
+
+.fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
