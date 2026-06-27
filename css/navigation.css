@@ -1,0 +1,153 @@
+/* ===========================
+   BOTTOM NAVIGATION
+=========================== */
+
+.bottom-nav {
+
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0 auto;
+
+    padding:
+        10px
+        10px
+        calc(env(safe-area-inset-bottom) + 14px);
+
+    background: rgba(255,255,255,.94);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-top: 1px solid rgba(0,0,0,.05);
+
+    box-shadow:
+        0 -6px 24px rgba(58,50,44,.08);
+}
+
+/* ===========================
+   ITEMS
+=========================== */
+
+.nav-item {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+
+    color: var(--text-secondary);
+
+    transition:
+        color .25s,
+        transform .2s;
+}
+
+.nav-item:active {
+    transform: scale(.95);
+}
+
+.nav-item.active {
+    color: var(--accent);
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.nav-emoji {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    font-size: 22px;
+}
+
+.nav-label {
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* ===========================
+   CENTER BUTTON
+=========================== */
+
+.nav-item.add {
+
+    margin-top: -24px;
+}
+
+.nav-item.add .nav-emoji {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 10px 24px rgba(156,186,127,.35);
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+}
+
+.nav-item.add:active .nav-emoji {
+
+    transform: scale(.92);
+
+    box-shadow:
+        0 4px 12px rgba(156,186,127,.35);
+}
+
+/* ===========================
+   ACTIVE INDICATOR
+=========================== */
+
+.nav-item.active .nav-label {
+
+    font-weight: 700;
+}
+
+/* ===========================
+   DESKTOP
+=========================== */
+
+@media (min-width: 431px) {
+
+    .bottom-nav {
+
+        left: 50%;
+
+        right: auto;
+
+        transform: translateX(-50%);
+    }
+
+}
