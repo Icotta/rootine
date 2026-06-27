@@ -1,0 +1,166 @@
+/* ===========================
+   WEEK CALENDAR
+=========================== */
+
+.week-calendar {
+    padding: 20px 18px;
+
+    background: var(--card);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.week-label {
+    margin-bottom: 14px;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+/* ===========================
+   WEEK ROW
+=========================== */
+
+.week-row {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 4px;
+}
+
+.week-day-col {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 4px 0;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background .2s,
+        transform .2s;
+}
+
+.week-day-col:hover {
+    background: rgba(156,186,127,.08);
+}
+
+.week-day-col:active {
+    transform: scale(.96);
+}
+
+/* ===========================
+   DAY NAME
+=========================== */
+
+.week-day-name {
+
+    color: var(--text-secondary);
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.week-date {
+
+    color: var(--text-secondary);
+
+    font-size: 10px;
+}
+
+/* ===========================
+   DOT
+=========================== */
+
+.week-dot {
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    transition:
+        transform .25s,
+        box-shadow .25s,
+        background .3s;
+}
+
+.week-day-col:hover .week-dot {
+    transform: scale(1.08);
+}
+
+.week-dot.today {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 0 3px var(--bg),
+        0 0 0 5px var(--accent);
+}
+
+/* ===========================
+   SEED
+=========================== */
+
+.week-dot.seed-1 { background:#E8D9C8; }
+.week-dot.seed-2 { background:#D9C4A9; }
+.week-dot.seed-3 { background:#C8A882; }
+.week-dot.seed-4 { background:#B89260; }
+.week-dot.seed-5 { background:#A67C42; }
+
+/* ===========================
+   SPROUT
+=========================== */
+
+.week-dot.sprout-1 { background:#D4E4CC; }
+.week-dot.sprout-2 { background:#B8CFA8; }
+.week-dot.sprout-3 { background:#9CBA7F; }
+.week-dot.sprout-4 { background:#7FA562; }
+.week-dot.sprout-5 { background:#6B8E4E; }
+.week-dot.sprout-6 { background:#5C7A3F; }
+.week-dot.sprout-7 { background:#4E6832; }
+.week-dot.sprout-8 { background:#3F5626; }
+.week-dot.sprout-9 { background:#2F441B; }
+
+/* ===========================
+   BLOOM
+=========================== */
+
+.week-dot.bloom-1 { background:#F2D0D5; }
+.week-dot.bloom-2 { background:#E8B4BC; }
+.week-dot.bloom-3 { background:#D4888C; }
+
+/* ===========================
+   FRUIT
+=========================== */
+
+.week-dot.fruit-1 { background:#F0D5C0; }
+.week-dot.fruit-2 { background:#E8C0A0; }
+.week-dot.fruit-3 { background:#D4956E; }
+.week-dot.fruit-4 { background:#C07C4A; }
+.week-dot.fruit-5 { background:#A86836; }
+.week-dot.fruit-6 { background:#8F5225; }
+.week-dot.fruit-7 { background:#753F18; }
+.week-dot.fruit-8 { background:#5C2E0F; }
+.week-dot.fruit-9 { background:#441F08; }
+.week-dot.fruit-10 { background:#2E1203; }
+.week-dot.fruit-11 { background:#1A0800; }
