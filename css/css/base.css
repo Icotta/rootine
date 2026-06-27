@@ -1,0 +1,212 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   BODY
+=========================== */
+
+html {
+    height: 100%;
+}
+
+body {
+
+    font-family: var(--font);
+
+    background: var(--bg);
+    color: var(--text);
+
+    max-width: 430px;
+    margin: 0 auto;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    padding: 20px 20px 110px;
+
+    overflow-x: hidden;
+
+    -webkit-font-smoothing: antialiased;
+
+    -webkit-tap-highlight-color: transparent;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button {
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    border: none;
+
+    background: transparent;
+
+}
+
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea {
+
+    font-family: inherit;
+
+}
+
+
+/* ===========================
+   SVG
+=========================== */
+
+svg {
+
+    display: block;
+
+}
+
+
+/* ===========================
+   LINKS
+=========================== */
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+/* ===========================
+   ONBOARDING
+=========================== */
+
+.onboarding-slides .slide {
+
+    display: none;
+
+}
+
+.onboarding-slides .slide.active {
+
+    display: block;
+
+}
+
+.onboarding-slide-icon {
+
+    font-size: 60px;
+
+    margin-bottom: 16px;
+
+}
+
+.onboarding-slide-title {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+}
+
+.onboarding-slide-text {
+
+    font-size: 14px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.5;
+
+}
+
+.onboarding-dot {
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #DDD;
+
+}
+
+.onboarding-dot.active {
+
+    background: var(--accent);
+
+}
+
+
+/* ===========================
+   TOAST
+=========================== */
+
+#toast {
+
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 120px;
+
+    transform: translateX(-50%);
+
+    background: #3A322C;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    z-index: 300;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity .3s;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:380px){
+
+    body{
+
+        padding:14px 14px 105px;
+
+    }
+
+}
