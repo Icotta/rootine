@@ -3,18 +3,23 @@
 =========================== */
 
 body {
+
     max-width: 430px;
+
     margin: 0 auto;
+
     min-height: 100vh;
     min-height: 100dvh;
 
-    padding:
-        env(safe-area-inset-top, 20px)
-        20px
-        calc(96px + env(safe-area-inset-bottom))
-        20px;
+    background: var(--bg);
 
     overflow-x: hidden;
+
+    padding:
+        env(safe-area-inset-top,20px)
+        20px
+        calc(92px + env(safe-area-inset-bottom))
+        20px;
 }
 
 /* ===========================
